@@ -192,23 +192,29 @@
 }
 
 #product_sort {
-    background-color:#eaeaea;
-    margin-bottom:10px;
+    background-color: #eaeaea;
+    margin-bottom: 10px;
 }
-table, th, td {
+
+table,
+th,
+td {
     border-collapse: collapse;
     font-size: 12px;
     padding: 5px;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #ccc;
     font-weight: normal;
     padding: 5px;
     text-align: left;
 }
 
-.button-base {
+.scan-bay,
+.packer-1,
+.packer-2 {
     display: flex;
     height: 40px;
     width: 80px;
