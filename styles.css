@@ -151,6 +151,7 @@
     display: inline-flex;
     align-items: center;
     padding: 5px;
+    gap: 5px;
 }
 
 .p-div-21 {
