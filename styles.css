@@ -214,8 +214,9 @@ td {
 
 .td-end {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    margin-right: 10px;
 }
 
 .scan-bay,
