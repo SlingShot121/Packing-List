@@ -222,7 +222,7 @@ td {
 .packer-1,
 .packer-2 {
     height: 30px;
-    width: 60px;
+    width: auto;
     color: white;
     border: 1px solid #cccccc;
     border-radius: 5px;
