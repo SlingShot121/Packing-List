@@ -162,3 +162,17 @@
     width: 50px;
     height: 34px;
 }
+
+.datepicker {
+    border: 1px solid #cccccc;
+    height: 29px;
+    width: 206px;
+    padding: 5px;
+}
+
+.button-div-26 {
+    padding: 3px;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 30px;
+}
