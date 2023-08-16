@@ -158,9 +158,11 @@
 }
 
 .select-div-22 {
-    margin-left: 10px;
-    width: 50px;
-    height: 34px;
+    width: 220px;
+    height: 30px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 4px 6px;
 }
 
 .datepicker {
