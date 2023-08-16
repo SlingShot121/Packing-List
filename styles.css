@@ -145,14 +145,13 @@
     justify-content: space-between;
     margin-bottom: 10px;
     border-bottom: 2px solid #cccccc;
-    flex-wrap: wrap;
+    padding: 5px;
 }
 
 .div-div-20 {
     display: inline-flex;
     align-items: center;
     height: 50px;
-    padding: 5px;
     gap: 5px;
 }
 
@@ -179,4 +178,9 @@
 .button-div-26 {
     padding: 3px;
     height: 30px;
+}
+
+.print-button {
+    width: 180px;
+    padding: 3px;
 }
