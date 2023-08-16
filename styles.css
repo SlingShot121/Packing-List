@@ -145,6 +145,7 @@
     justify-content: space-between;
     margin-bottom: 10px;
     border-bottom: 2px solid #cccccc;
+    flex-wrap: wrap;
 }
 
 .div-div-20 {
