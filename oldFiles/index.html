@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bay Management</title>
+
+    <!-- Local Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif;">
+
+<div style="width: 870px;">
+
+    <div style="display: flex; justify-content: center; align-items: center;font-size: 12px; clear:both; background-color: rgb(22, 88, 137); border-bottom: 0px solid rgb(51, 204, 255); color: white; left: 0px; text-align: center; top: 0px; width: 100%; height: 30px;">
+        Distribution Calendar
+    </div>
+    
+        <ul style="padding: 0px; list-style: outside none none; display: flex; margin: 0px; background-color: white; width: 100%; border-bottom: 1px solid rgb(204, 204, 204); height: 35px;">
+    
+            <li style="cursor: pointer; display: flex; justify-content: center; align-items: center; border-right: 1px solid rgb(197, 197, 197); width: 145px; height: 35px; " page="1" class="calendar_menu" id="">
+                    <p style="font-weight: normal; font-size: 12px; text-align: center; "> <span style="font-size: 12px; font-weight: bold;">Calendar view</span> </p>
+            </li>
+    
+            <li style="cursor: pointer; display: flex; justify-content: center; align-items: center; border-right: 1px solid rgb(197, 197, 197); width: 145px; height: 35px;" page="2" class="calendar_menu" id="">
+                <p style="font-size: 12px; font-weight: bold; text-align: center;"> Report</p>
+            </li>
+    
+            <li style="cursor: pointer; display: flex; justify-content: center; align-items: center; border-right: 1px solid rgb(197, 197, 197); width: 145px; height: 35px;" page="3" class="calendar_menu" id="">
+                <p style="font-size: 12px; font-weight: bold; text-align: center;"> Packing List</p>
+            </li>
+    
+            <li style="cursor:pointer; display: flex; justify-content: center; align-items: center; border-right: 1px solid rgb(197, 197, 197); height: 35px;  width: 145px;" page="4" class="calendar_menu" id="">
+                <p style="font-size: 12px; font-weight: bold; text-align: center;"> Packed List</p>
+            </li>
+    
+            <li style="cursor:pointer; display: flex; justify-content: center; align-items: center; border-right: 1px solid rgb(197, 197, 197); height: 35px; width: 145px;" page="5" class="calendar_menu" id="">
+                <p style="font-size: 12px; font-weight: bold; text-align: center;"> Reserved List</p>
+            </li>
+    
+            <li style="cursor:pointer; display: flex; justify-content: center; align-items: center; height: 35px; width: 145px; background-color: rgb(234, 234, 234);" page="6" class="calendar_menu" id="">
+                <p style="font-size: 12px; font-weight: bold; text-align: center;"> Bay Management</p>
+            </li>
+    
+        </ul>
+</div>
+
+
+    <div id="ticker" style="width: 870px;">
+        <div style="width: 870px; display: inline-flex; align-items: center; justify-content: space-between; margin-bottom: 10px; border-bottom: 2px solid #cccccc;">
+            <div style="display: inline-flex; align-items: center">
+                <p style="font-weight: 700; font-size: 30px ;">
+                    Bay:
+                </p>
+                <select style="margin-left: 10px; width: 50px; height: 34px;" name="bay" id="bay_selector">
+                    <option value="a1">A1</option>
+                    <option value="b2">B2</option>
+                    <option value="c3">C3</option>
+                    <option value="d4">D4</option>
+                    <option value="e5">E5</option>
+                    <option value="f6">F6</option>
+                </select>
+            </div>
+            <div style="display: inline-flex; align-items: center;">
+                <button style="padding: 3px; margin-right: 10px; margin-left: 10px; height: 30px;">Add to Bay</button>
+                <input style="border: 1px solid #cccccc; height: 29px; width: 206px; padding: 5px;" type="text" placeholder="Search by Reference #">
+                <button style="padding: 3px; margin-right: 10px; margin-left: 10px; height: 30px;">Go</button>
+            </div>
+        </div>
+        <div style="font-weight: 700; width: 870px; height: 40px; display: inline-flex; align-items: center; border-bottom: 2px solid #cccccc; border-top: 2px solid #cccccc;">
+            <p style="width: 80px;">Ref</p><span style="height: 40px; border-right: 1px solid rgb(197, 197, 197);"></span>
+            <p style="margin-left:5px; width: 80px;">Code</p><span style="height: 40px; border-right: 1px solid rgb(197, 197, 197);"></span>
+            <p style="margin-left:5px; width: 80px;">Qty</p><span style="height: 40px; border-right: 1px solid rgb(197, 197, 197);"></span>
+            <p style="margin-left:5px; width: 80px;">Bay</p><span style="height: 40px; border-right: 1px solid rgb(197, 197, 197);"></span>
+        </div>
+        <div class="content" style="font-weight: 700; width: 870px; height: 100px; display: inline-flex; align-items: center;">
+
+        </div>
+        <div>
+            <p style="font-weight: 700; font-size: 25px ;">
+                In Bay:
+            </p>
+            <div style="font-weight: 700; width: 870px; height: 40px; display: inline-flex; align-items: center; border-bottom: 2px solid #cccccc; border-top: 2px solid #cccccc;">
+                <p style="width: 80px;">Ref</p><span style="height: 40px; border-right: 1px solid rgb(197, 197, 197);"></span>
+                <p style="margin-left:5px; width: 80px;">Code</p><span style="height: 40px; border-right: 1px solid rgb(197, 197, 197);"></span>
+                <p style="margin-left:5px; width: 80px;">Qty</p><span style="height: 40px; border-right: 1px solid rgb(197, 197, 197);"></span>
+                <p style="margin-left:5px; width: 80px;">Bay</p><span style="height: 40px; border-right: 1px solid rgb(197, 197, 197);"></span>
+            </div>
+        </div>
+        <div>
+            <div style="display: inline-flex; width: 500px; border-bottom: 1px solid rgb(197, 197, 197);" class="row">
+                <p style="width: 80px;" class="ref">L63794</p><span style="height: 50px; border-right: 1px solid rgb(197, 197, 197);"></span>
+                <p style="margin-left:5px; width: 80px;" class="code">VLB5</p><span style="height: 50px; border-right: 1px solid rgb(197, 197, 197);"></span>
+                <p style="margin-left:5px; width: 80px;" class="quant">150</p><span style="height: 50px; border-right: 1px solid rgb(197, 197, 197);"></span>
+                <a style="margin-right: 10px; display: inline-flex; align-items: center; justify-self: flex-end;" href="#">
+                    <img src="Empty.png" alt="">
+                </a>
+                <button style="height: 40px; width: 70px; background-color: red; border: 1px solid #cccccc; border-radius: 5px" class="remove_from_bay">Remove</button>
+            </div>
+            <div style="display: inline-flex; align-items: center;" class="line_end">
+
+            </div>
+            <div style="display: inline-flex; width: 870px; border-bottom: 1px solid rgb(197, 197, 197);" class="row">
+                <p style="width: 80px;" class="spacer"></p><span style="height: 50px; border-right: 1px solid rgb(197, 197, 197);"></span>
+                <p style="margin-left:5px; width: 80px;" class="code">VEB5</p><span style="height: 50px; border-right: 1px solid rgb(197, 197, 197);"></span>
+                <p style="margin-left:5px; width: 80px;" class="quant">100</p><span style="height: 50px; border-right: 1px solid rgb(197, 197, 197);"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2fbdcf2476.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

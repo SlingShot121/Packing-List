@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Bay Management</title>
+    <!-- Local Styles -->
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body class="body-html-1">
+    <div class="div-body-2">
+        <div class="div-div-3">
+            Distribution Calendar
+        </div>
+        <ul class="ul-div-4">
+            <li class="li-ul-5" id="" page="1">
+                <p class="p-li-6"> <span class="span-p-7">Calendar view</span> </p>
+            </li>
+            <li class="li-ul-8" id="" page="2">
+                <p class="p-li-9"> Report</p>
+            </li>
+            <li class="li-ul-10" id="" page="3">
+                <p class="p-li-11"> Packing List</p>
+            </li>
+            <li class="li-ul-12" id="" page="4">
+                <p class="p-li-13"> Packed List</p>
+            </li>
+            <li class="li-ul-14" id="" page="5">
+                <p class="p-li-15"> Reserved List</p>
+            </li>
+            <li class="li-ul-16" id="" page="6">
+                <p class="p-li-17"> Bay Management</p>
+            </li>
+        </ul>
+    </div>
+    <div class="div-body-18" id="ticker">
+        <div class="div-div-19">
+            <div class="div-div-20">
+                <p class="p-div-21">
+                    Bay:
+                </p>
+                <select class="select-div-22" id="bay_selector" name="bay">
+                    <option value="a1">A1</option>
+                    <option value="b2">B2</option>
+                    <option value="c3">C3</option>
+                    <option value="d4">D4</option>
+                    <option value="e5">E5</option>
+                    <option value="f6">F6</option>
+                </select>
+            </div>
+            <div class="div-div-23">
+                <button id="add-button" class="button-div-24">Add to Bay</button>
+                <input id="ref-search" class="input-div-25" placeholder="Search by Reference #" type="text" />
+                <button id="go-button" class="button-div-26">Go</button>
+            </div>
+        </div>
+        <div class="div-div-27">
+            <p class="p-div-28">Ref</p><span class="span-div-29"></span>
+            <p class="p-div-30">Code</p><span class="span-div-31"></span>
+            <p class="p-div-32">Qty</p><span class="span-div-33"></span>
+            <p class="p-div-34">Bay</p><span class="span-div-35"></span>
+        </div>
+        <div id="outbay" class="div-div-top" style="display: none;">
+            <div class="product-line-start">
+                <p id="outbay-order-ref" class="p-div-bay">placeholder</p><span class="span-div-49"></span>
+                <p class="p-div-bay">VLB5</p><span class="span-div-51"></span>
+                <p class="p-div-bay">150</p><span class="span-div-53"></span>
+            </div>
+            <div id="bay-cap-outbay" class="inbay-line-end" style="display: none;">
+                <a class="a-div-54" href="#">
+                    <img alt="" src="Empty.png" />
+                </a>
+            </div>
+        </div>
+        <div id="outbay-2" class="div-div-top2" style="display: none;">
+            <p id="order-ref" class="p-div-bay"></p><span class="span-div-49"></span>
+            <p class="p-div-bay">VEB5</p><span class="span-div-61"></span>
+            <p class="p-div-bay">100</p><span class="span-div-63"></span>
+        </div>
+        <div>
+            <p class="p-div-37">
+                In Bay:
+            </p>
+            <div class="div-div-38">
+                <p class="p-div-bay">Ref</p><span class="span-div-40"></span>
+                <p class="p-div-bay">Code</p><span class="span-div-42"></span>
+                <p class="p-div-bay">Qty</p><span class="span-div-44"></span>
+                <p class="p-div-bay">Bay</p><span class="span-div-46"></span>
+            </div>
+        </div>
+        <div>
+            <div class="div-div-47" style="display: none;">
+                <div class="product-line-start">
+                    <p id="order-ref" class="p-div-bay"></p><span class="span-div-49"></span>
+                    <p class="p-div-bay">VLB5</p><span class="span-div-51"></span>
+                    <p class="p-div-bay">150</p><span class="span-div-53"></span>
+                </div>
+                <div id="bay-cap" class="inbay-line-end" style="display: none;">
+                    <a class="a-div-54" href="#">
+                        <img alt="" src="Empty.png" />
+                    </a>
+                    <button id="remove-button" class="button-div-55">Remove</button>
+                </div>
+            </div>
+            <div class="div-div-57" style="display: none;">
+                <p class="p-div-bay"></p><span class="span-div-59"></span>
+                <p class="p-div-bay">VEB5</p><span class="span-div-61"></span>
+                <p class="p-div-bay">100</p><span class="span-div-63"></span>
+            </div>
+            <div id="bay-footer" class="inbay-bay-end" style="display: none;">
+                <button class="bay-footer cam" id="camera-menu"><img alt="" src="camera.png" /></button>
+                <button class="bay-footer d-s">Distributor Signature</button>
+                <button class="bay-footer c-s">Customer Signature</button>
+                <button class="bay-footer p-p">Print Preview</button>
+            </div>
+            <div id="myModal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="modal-close" id="closeModal" style="cursor:pointer;">&times;</span>
+                        <span class="modal-title">Order Images</span>
+                    </div>
+                    <div class="modal-body">
+                        <button class="modal-button p-s">Proof Of Stock</button>
+                        <button class="modal-button c-w">Customer Waybill</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/2fbdcf2476.js"></script>
+</body>
+
+</html>
