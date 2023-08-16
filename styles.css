@@ -190,3 +190,8 @@
 .calendar-report-print {
     padding: 10px;
 }
+
+#product_sort {
+    background-color:#eaeaea;
+    margin-bottom:10px;
+}
