@@ -202,7 +202,8 @@ table, th, td {
 }
 
 th, td {
-    border-collapse: collapse;
-    font-size: 12px;
+    border: 1px solid #ccc;
+    font-weight: normal;
     padding: 5px;
+    text-align: left;
 }
