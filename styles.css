@@ -212,20 +212,21 @@ td {
     text-align: left;
 }
 
+.td-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .scan-bay,
 .packer-1,
 .packer-2 {
-    display: flex;
-    height: 40px;
-    width: 80px;
+    height: 30px;
+    width: 60px;
     color: white;
     border: 1px solid #cccccc;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 10px;
-    margin-top: 5px;
-    justify-content: center;
-    align-items: center;
 }
 
 .scan-bay {
