@@ -213,8 +213,9 @@ td {
 }
 
 .td-end {
+    width: 250px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -222,7 +223,7 @@ td {
 .packer-1,
 .packer-2 {
     height: 30px;
-    width: auto;
+    width: 75px;
     color: white;
     border: 1px solid #cccccc;
     border-radius: 5px;
