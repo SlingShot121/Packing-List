@@ -149,7 +149,8 @@
 
 .div-div-20 {
     display: inline-flex;
-    align-items: center
+    align-items: center;
+    padding: 5px;
 }
 
 .p-div-21 {
