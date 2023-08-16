@@ -144,7 +144,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
-    border-bottom: 2px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
     padding: 5px;
 }
 
@@ -183,4 +183,8 @@
 .print-button {
     width: 180px;
     padding: 3px;
+}
+
+.calendar-report-print {
+    padding: 10px;
 }
