@@ -78,6 +78,7 @@
     border-right: 1px solid rgb(197, 197, 197);
     width: 145px;
     height: 35px;
+    background-color: rgb(234, 234, 234);
 }
 
 .p-li-11 {
@@ -125,7 +126,6 @@
     align-items: center;
     height: 35px;
     width: 145px;
-    background-color: rgb(234, 234, 234);
 }
 
 .p-li-17 {
