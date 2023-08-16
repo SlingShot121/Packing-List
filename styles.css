@@ -207,3 +207,15 @@ th, td {
     padding: 5px;
     text-align: left;
 }
+
+.scan-bay {
+    background-color: #0000FF;
+}
+
+.packer-1 {
+    background-color: #FFA500;
+}
+
+.packer-2 {
+    background-color: #008000;
+}
