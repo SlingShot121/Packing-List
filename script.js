@@ -12,8 +12,13 @@ function onScanError(errorMessage) {
     console.log(errorMessage);
 }
 
-// Setting up QR Scanner properties
-var html5QrCodeScanner = new Html5QrcodeScanner("reader", { fps: 10, qrbox: 250 }, /* verbose= */ false, /* disableFlip= */ true);
+// Setting up QR Scanner properties with preferred facing mode for the back camera
+var html5QrCodeScanner = new Html5QrcodeScanner(
+    "reader",
+    { fps: 10, qrbox: 250, facingMode: "environment" }, // "environment" forces the use of the back camera
+    /* verbose= */ false,
+    /* disableFlip= */ true
+);
 
 // Add a click event listener to the "Scan Bay" button
 document.getElementById('scan-bay-button').addEventListener('click', function() {
