@@ -217,7 +217,10 @@ td {
 }
 
 .td-div-end {
-    margin-left: auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .scan-bay,
