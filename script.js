@@ -25,14 +25,7 @@ var html5QrCodeScanner = new Html5QrcodeScanner("reader", { fps: 10, qrbox: 250 
 
 // Usage
 window.onload = function () {
-    var bay = getUrlParameter('bay');
-    var ref = getUrlParameter('ref');
-    var selectElement = document.getElementById('bays-id-503891');
-    var inputElement = document.getElementById('reference-input');
     var currentReference = "2";
-
-    setSelectedOption(selectElement, bay);
-    inputElement.value = referenceValues[ref];
 
     // Open the camera app when the button is clicked
     document.getElementById('scan-bay-button').addEventListener('click', function() {
