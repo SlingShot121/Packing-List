@@ -9,7 +9,7 @@ function getUrlParameter(name) {
 // When scan is successful function will produce data
 function onScanSuccess(qrCodeMessage) {
     html5QrCodeScanner.clear().then(() => {
-        window.location.href = qrCodeMessage + "&ref=" + currentReference;
+        window.location.href = qrCodeMessage;
     }).catch((err) => {
         console.log(err);
     });
