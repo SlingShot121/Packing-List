@@ -212,6 +212,10 @@ td {
     text-align: left;
 }
 
+.tr-description {
+    width: 275px;
+}
+
 .td-end {
     margin-right: 10px;
 }
