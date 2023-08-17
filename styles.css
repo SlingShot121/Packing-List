@@ -227,7 +227,7 @@ td {
     align-items: center;
 }
 
-.scan-bay,
+#scan-bay-button,
 .packer-1,
 .packer-2 {
     height: 30px;
