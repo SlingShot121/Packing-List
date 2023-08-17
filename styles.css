@@ -238,7 +238,7 @@ td {
     cursor: pointer;
 }
 
-.scan-bay {
+#scan-bay-button {
     background-color: #0000FF;
 }
 
