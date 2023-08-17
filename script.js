@@ -35,7 +35,7 @@ window.onload = function () {
     inputElement.value = referenceValues[ref];
 
     // Open the camera app when the button is clicked
-    document.getElementById('scan-bay').addEventListener('click', function() {
+    document.getElementById('scan-bay-button').addEventListener('click', function() {
         html5QrCodeScanner.render(onScanSuccess, onScanError);
     });
 }
