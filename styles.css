@@ -213,8 +213,11 @@ td {
 }
 
 .td-end {
-    margin-left: auto;
     margin-right: 10px;
+}
+
+.td-div-end {
+    margin-left: auto;
 }
 
 .scan-bay,
