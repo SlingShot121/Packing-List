@@ -228,6 +228,7 @@ td {
 }
 
 .scan-bay {
+    margin-left: auto;
     background-color: #0000FF;
 }
 
