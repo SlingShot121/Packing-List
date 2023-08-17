@@ -213,6 +213,7 @@ td {
 }
 
 .td-end {
+    margin-left: auto;
     margin-right: 10px;
 }
 
@@ -228,7 +229,6 @@ td {
 }
 
 .scan-bay {
-    margin-left: auto;
     background-color: #0000FF;
 }
 
