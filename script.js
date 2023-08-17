@@ -1,12 +1,4 @@
-// A function that parses URL parameters
-function getUrlParameter(name) {
-    name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
-    var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-    var results = regex.exec(location.search);
-    return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-}
-
-// When scan is successful function will produce data
+// When scan is successful, this function will produce data
 function onScanSuccess(qrCodeMessage) {
     html5QrCodeScanner.clear().then(() => {
         window.location.href = qrCodeMessage;
@@ -15,20 +7,15 @@ function onScanSuccess(qrCodeMessage) {
     });
 }
 
-// When scan is unsuccessful function will produce error message
+// When scan is unsuccessful, this function will produce an error message
 function onScanError(errorMessage) {
     console.log(errorMessage);
 }
 
-// Setting up Qr Scanner properties
+// Setting up QR Scanner properties
 var html5QrCodeScanner = new Html5QrcodeScanner("reader", { fps: 10, qrbox: 250 }, /* verbose= */ false, /* disableFlip= */ true);
 
-// Usage
-window.onload = function () {
-    var currentReference = "2";
-
-    // Open the camera app when the button is clicked
-    document.getElementById('scan-bay-button').addEventListener('click', function() {
-        html5QrCodeScanner.render(onScanSuccess, onScanError);
-    });
-}
+// Add a click event listener to the "Scan Bay" button
+document.getElementById('scan-bay-button').addEventListener('click', function() {
+    html5QrCodeScanner.render(onScanSuccess, onScanError);
+});
