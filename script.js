@@ -21,6 +21,6 @@ var html5QrCodeScanner = new Html5QrcodeScanner(
 );
 
 // Add a click event listener to the "Scan Bay" button
-document.getElementById('scan-bay-button').addEventListener('click', function() {
+document.getElementById('scan-bay-button').addEventListener('click', function () {
     html5QrCodeScanner.render(onScanSuccess, onScanError);
 });
