@@ -213,9 +213,6 @@ td {
 }
 
 .td-end {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     margin-right: 10px;
 }
 
