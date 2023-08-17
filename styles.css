@@ -217,6 +217,7 @@ td {
 }
 
 .td-end {
+    width: 275px;
     margin-right: 10px;
 }
 
