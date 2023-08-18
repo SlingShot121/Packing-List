@@ -254,9 +254,9 @@ td {
     background-color: #008000;
 }
 
-/* #html5-qrcode-select-camera {
+#html5-qrcode-select-camera {
     visibility: hidden !important;
-} */
+}
 
 .qr-modal {
     display: none; /* Initially hidden */
