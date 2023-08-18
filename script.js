@@ -23,7 +23,15 @@ var html5QrCodeScanner = new Html5QrcodeScanner(
 // Function to toggle the QR code scanner modal
 function toggleQRModal() {
     var modal = document.getElementById('qr-modal');
-    modal.style.display = modal.style.display === 'none' || modal.style.display === '' ? 'block' : 'none';
+    if (modal.style.display === 'none' || modal.style.display === '') {
+        modal.style.display = 'block';
+    } else {
+        modal.style.display = 'none';
+        // Stop scanning when the modal is closed
+        html5QrCodeScanner.clear().catch((err) => {
+            console.log(err);
+        });
+    }
 }
 
 // Add a click event listener to the "Scan Bay" button to toggle the modal
