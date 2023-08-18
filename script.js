@@ -31,3 +31,6 @@ document.getElementById('scan-bay-button').addEventListener('click', function ()
     toggleQRModal();
     html5QrCodeScanner.render(onScanSuccess, onScanError);
 });
+
+// Add a click event listener to the close button to toggle the modal
+document.getElementById('close-qr-modal').addEventListener('click', toggleQRModal);
