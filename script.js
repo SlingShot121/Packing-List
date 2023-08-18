@@ -20,7 +20,14 @@ var html5QrCodeScanner = new Html5QrcodeScanner(
     /* disableFlip= */ true
 );
 
-// Add a click event listener to the "Scan Bay" button
+// Function to toggle the QR code scanner modal
+function toggleQRModal() {
+    var modal = document.getElementById('qr-modal');
+    modal.style.display = modal.style.display === 'none' || modal.style.display === '' ? 'block' : 'none';
+}
+
+// Add a click event listener to the "Scan Bay" button to toggle the modal
 document.getElementById('scan-bay-button').addEventListener('click', function () {
+    toggleQRModal();
     html5QrCodeScanner.render(onScanSuccess, onScanError);
 });
