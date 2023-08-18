@@ -255,7 +255,7 @@ td {
 }
 
 #html5-qrcode-select-camera {
-    display: none !important;
+    visibility: hidden !important;
 }
 
 .qr-modal {

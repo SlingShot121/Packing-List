@@ -15,7 +15,7 @@ function onScanError(errorMessage) {
 // Setting up QR Scanner properties with preferred facing mode for the back camera
 var html5QrCodeScanner = new Html5QrcodeScanner(
     "reader",
-    { fps: 10, qrbox: 250, facingMode: "right" }, // "environment" forces the use of the back camera
+    { fps: 10, qrbox: 250, facingMode: "environment" }, // "environment" forces the use of the back camera
     /* verbose= */ false,
     /* disableFlip= */ true
 );
