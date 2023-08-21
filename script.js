@@ -1,11 +1,16 @@
 // When scan is successful, this function will produce data
 function onScanSuccess(qrCodeMessage) {
     html5QrCodeScanner.clear().then(() => {
-        window.open(qrCodeMessage, '_blank'); // Opens the URL in a new tab
+        // Close the modal
+        toggleQRModal();
+
+        // Open the URL in a new tab
+        window.open(qrCodeMessage, '_blank');
     }).catch((err) => {
         console.log(err);
     });
 }
+
 
 // When scan is unsuccessful, this function will produce an error message
 function onScanError(errorMessage) {
