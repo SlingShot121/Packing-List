@@ -17,7 +17,7 @@ var html5QrCodeScanner = new Html5QrcodeScanner(
     "reader",
     { fps: 10, qrbox: 250, facingMode: { exact: "environment" } }, // "environment" forces the use of the back camera
     /* verbose= */ false,
-    /* disableFlip= */ true
+    /* disableFlip= */ false
 );
 
 // Function to toggle the QR code scanner modal
