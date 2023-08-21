@@ -280,14 +280,14 @@ td {
     align-items: center;
     justify-content: flex-end;
     width: 100%;
-    height: 10px;
+    height: 20px;
 }
 
 .close-qr-modal {
     border: none;
     font-size: 24px;
     cursor: pointer;
-    padding: none;
+    padding: 0;
 }
 
 .close-qr-modal:hover {
