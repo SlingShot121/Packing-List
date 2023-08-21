@@ -1,7 +1,7 @@
 // When scan is successful, this function will produce data
 function onScanSuccess(qrCodeMessage) {
     html5QrCodeScanner.clear().then(() => {
-        window.location.href = qrCodeMessage;
+        window.open(qrCodeMessage, '_blank'); // Opens the URL in a new tab
     }).catch((err) => {
         console.log(err);
     });
