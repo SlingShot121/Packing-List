@@ -254,10 +254,6 @@ td {
     background-color: #008000;
 }
 
-#html5-qrcode-select-camera {
-    z-index: -2222222222 !important;
-}
-
 .qr-modal {
     display: none; /* Initially hidden */
     position: fixed;
