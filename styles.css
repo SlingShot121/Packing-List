@@ -271,6 +271,7 @@ td {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
+    padding: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -286,6 +287,7 @@ td {
     border: none;
     font-size: 24px;
     cursor: pointer;
+    padding: none;
 }
 
 .close-qr-modal:hover {
