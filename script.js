@@ -13,11 +13,12 @@ function onScanError(errorMessage) {
 }
 
 // Setting up QR Scanner properties with preferred facing mode for the back camera
-const html5QrcodeScanner = new Html5QrcodeScanner("reader", {
-    fps: 10,
-    qrbox: { width: 250, height: 250 },
-    videoConstraints: { facingMode: { exact: "environment" } },
-  });
+var html5QrCodeScanner = new Html5QrcodeScanner(
+    "reader",
+    { fps: 10, qrbox: 250, facingMode: "environment" }, // "environment" forces the use of the back camera
+    /* verbose= */ false,
+    /* disableFlip= */ true
+);
 
 // Function to toggle the QR code scanner modal
 function toggleQRModal() {
